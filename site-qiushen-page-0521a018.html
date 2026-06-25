@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>球神直播 · 日常观赛的稳定入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f2f0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+      color: #2d2d2d;
+    }
+
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.04);
+      padding: 2.5rem 2rem;
+    }
+
+    .hero {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #e6e4e0;
+      padding-bottom: 1.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 620;
+      letter-spacing: -0.01em;
+      color: #1c1c1b;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero .subhead {
+      font-size: 1rem;
+      color: #6b6b68;
+      margin-top: 0.3rem;
+      font-weight: 400;
+      border-left: 3px solid #cbc8c2;
+      padding-left: 1rem;
+    }
+
+    .card {
+      background: #f9f9f7;
+      border-radius: 18px;
+      border: 1px solid #eae8e4;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 580;
+      color: #2c2c2a;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.01em;
+    }
+
+    .card p {
+      margin-bottom: 0.9rem;
+      color: #40403d;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card .highlight {
+      background: #edece8;
+      padding: 0.1rem 0.4rem;
+      border-radius: 6px;
+      font-weight: 450;
+    }
+
+    .card .quote-line {
+      margin: 1.2rem 0 0.2rem 0;
+      padding: 0.8rem 1.2rem;
+      background: #ffffff;
+      border-left: 4px solid #c1bdb6;
+      border-radius: 0 10px 10px 0;
+      font-style: normal;
+      font-size: 0.95rem;
+      color: #4a4a47;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .card .quote-line strong {
+      font-weight: 580;
+      color: #1f1f1d;
+    }
+
+    .link-sentence {
+      margin: 2rem 0 0.6rem 0;
+      font-size: 1rem;
+      color: #3f3f3c;
+      text-align: left;
+      padding: 0 0.2rem;
+    }
+
+    .link-sentence a {
+      color: #2d5a5a;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #b8cfcf;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .link-sentence a:hover {
+      color: #1b3f3f;
+      border-bottom-color: #1b3f3f;
+    }
+
+    .faq-mini {
+      margin-top: 0.2rem;
+      background: #f5f4f1;
+      border-radius: 16px;
+      padding: 1.4rem 1.6rem;
+      border: 1px solid #dfdcd6;
+    }
+
+    .faq-mini h3 {
+      font-size: 1.05rem;
+      font-weight: 560;
+      margin-bottom: 0.8rem;
+      color: #2b2b28;
+    }
+
+    .faq-mini .item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.1rem;
+    }
+
+    .faq-mini .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-mini .q {
+      font-weight: 510;
+      color: #3c3c39;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-mini .a {
+      color: #5f5f5b;
+      font-size: 0.95rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid #d4d1cb;
+    }
+
+    .sign-off {
+      margin-top: 2.6rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid #e6e4e0;
+      font-size: 0.9rem;
+      color: #84837e;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.2rem 0.8rem;
+      }
+      .page-wrap {
+        padding: 1.8rem 1.2rem;
+      }
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
+      .faq-mini {
+        padding: 1rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="hero">
+      <h1>球神直播 · 日常观赛入口</h1>
+      <div class="subhead">一个稳定、简洁的观赛路径说明</div>
+    </div>
+
+    <div class="card">
+      <h2>为什么需要稳定的入口</h2>
+      <p>平时想看场球赛、电竞或者喜欢的直播节目，最怕的就是链接失效、页面打不开，或者被各种弹窗带偏。很多人习惯把常用的站点存进收藏夹，但时间一长，总有几个链接需要重新确认。</p>
+      <p>这篇文章想做的，就是帮你记住一个可靠的位置。不需要每次到处搜索，也不用反复试错。记住一个地方，剩下的就是打开页面、找到想看的节目。</p>
+      <div class="quote-line">
+        <strong>一句话概括：</strong> 把 <span class="highlight">球神直播</span> 当作你的观赛起点，省去中间那些绕来绕去的步骤。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>页面说明 · 这里能看到什么</h2>
+      <p>这里不是直播间本身，而是一个指向 <a href="https://site-qiushen.com" style="color:#2d5a5a; text-decoration: none; border-bottom: 1px solid #b8cfcf;">球神直播</a> 的说明页。换句话说，当你需要进入那个观赛环境时，可以从这个页面出发——它就像一个固定在桌面上的便签，告诉你：“直接点链接就行，别犹豫。”</p>
+      <p>页面内容不多，但重点明确：给出一个干净的指向，附带一些使用上的小提示。没有花哨的排行榜，没有冗余的广告区块，就是一份写给自己的备忘。</p>
+      <p>如果你之前用过类似站点，可能会遇到域名变动或者访问不畅的时候。所以这里特意保留了最直接的链接形式，方便复制或者长按跳转。</p>
+    </div>
+
+    <div class="faq-mini">
+      <h3>常见情况 · 快速参考</h3>
+      <div class="item">
+        <span class="q">📌 链接打不开怎么办？</span>
+        <span class="a">先检查网络环境，或者稍后再试。有时候只是临时波动，并不是站点本身的问题。</span>
+      </div>
+      <div class="item">
+        <span class="q">📌 需要注册或付费吗？</span>
+        <span class="a">大部分内容免费观看，部分特殊节目或高清线路可能需要账号登录，具体以页面提示为准。</span>
+      </div>
+      <div class="item">
+        <span class="q">📌 手机和电脑都能用吗？</span>
+        <span class="a">页面适配手机和电脑，可以直接在浏览器打开，无需额外安装应用。</span>
+      </div>
+    </div>
+
+    <div class="link-sentence">
+      如果你还没保存这个地址，现在就可以把 <a href="https://site-qiushen.com">球神直播</a> 加入书签，下次想看的时候直接点开就行。
+    </div>
+
+    <div class="sign-off">
+      · 球神直播 · 页面说明 · 稳定入口 ·
+    </div>
+  </div>
+</body>
+</html>
